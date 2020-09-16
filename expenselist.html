@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Expense List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/style.css"
+    />
+  </head>
+  <body>
+    <h1><span class="title">Expense</span> List</h1>
+    <h3>Total Spent : <span id="totalexpense">0.00</span></h3>
+    <fieldset>
+      <legend>Add Expense</legend>
+      <div class="inputDiv">
+        <input
+          type="date"
+          id="expensedate"
+          class="dateinput"
+          name="expensedate"
+        />
+        <input type="number" class="input" placeholder="Amount" id="amount" />
+        <select name="category" id="category" class="categoryinput">
+          <option value="Car" selected="selected">Car</option>
+          <option value="Clothes">Clothes</option>
+          <option value="Culture">Culture</option>
+          <option value="Entertainment">Entertainment</option>
+          <option value="extras">Extras</option>
+          <option value="Family">Family</option>
+          <option value="Food">Food</option>
+          <option value="Fuel">Fuel</option>
+          <option value="Gifts">Gifts</option>
+          <option value="Health">Health</option>
+          <option value="Household">Household</option>
+          <option value="Kids">Kids</option>
+          <option value="Others">Others</option>
+          <option value="Education">Education</option>
+          <option value="Travel">Travel</option>
+        </select>
+        <button class="add">save</button>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Expenses</legend>
+      <div class="container"></div>
+    </fieldset>
+    <fieldset>
+      <legend>Options</legend>
+      <button class="downloadBtn button2">Download</button>
+      <button class="resetBtn button2">Reset All</button>
+    </fieldset>
+    <p>Developed by: Nagarajan Kanagamani.</p>
+    <script src="js/main.js"></script>
+  </body>
+</html>
